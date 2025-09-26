@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlickBlock — Textured & Responsive</title>
+  <link rel="stylesheet" href="blickblockstyle.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>BlickBlock</h1>
+    <div class="actions">
+      <button id="btn-start" class="btn">Start</button>
+      <button id="btn-pause" class="btn">Pause</button>
+      <button id="btn-restart" class="btn btn-outline">Restart</button>
+    </div>
+  </header>
+
+  <main class="game-wrapper" id="game-wrapper" aria-live="polite">
+    <section class="game" id="game">
+      <canvas id="board" aria-label="Tetris board"></canvas>
+      <aside class="sidebar" id="sidebar">
+        <div class="panel">
+          <h2>Score</h2>
+          <div id="score">0</div>
+        </div>
+        <div class="panel">
+          <h2>Level</h2>
+          <div id="level">1</div>
+        </div>
+        <div class="panel">
+          <h2>Lines</h2>
+          <div id="lines">0</div>
+        </div>
+        <div class="panel">
+          <h2>Next</h2>
+          <canvas id="next" width="120" height="120" aria-label="Next piece preview"></canvas>
+        </div>
+        <div class="panel controls">
+          <h2>Controls</h2>
+          <ul>
+            <li>⬅️ / ➡️ Move</li>
+            <li>⬆️ Rotate</li>
+            <li>⬇️ Soft drop</li>
+            <li>Space Hard drop</li>
+            <li>P Pause</li>
+            <li>R Restart</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="overlay" class="overlay hidden" role="dialog">
+      <div class="overlay-content">
+        <h2 id="overlay-title">Ready</h2>
+        <p id="overlay-sub">Press Start to play</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Malorie Nickle — Tetris / Blickblock clone</p>
+  </footer>
+
+  <script src="blickblockgame.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+:root{
+  --bg: #0f1115;
+  --bg2:#171a21;
+  --text:#e9eef3;
+  --muted:#aab4bf;
+  --accent:#4dd0e1;
+  --accent-2:#26c6da;
+  --card:#12151b;
+  --gap: 16px;         /* spacing between board and sidebar */
+  --sidebar-min: 220px;/* min width for sidebar */
+  --sidebar-max: 320px;/* max width for sidebar */
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html, body { height:100%; overflow:hidden; }
+body{
+  font-family: ui-sans-serif, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(1200px 600px at 10% 10%, #151924 0%, var(--bg) 50%) fixed;
+  display:flex; flex-direction:column; line-height:1.5;
+}
+
+/* Header */
+.topbar{
+  flex-shrink:0;
+  display:flex; align-items:center; justify-content:space-between;
+  padding:1rem 1.2rem; background:var(--bg2); border-bottom:1px solid #202534;
+}
+.topbar h1{ font-size:1.1rem; letter-spacing:.04em; color:var(--accent); }
+.actions .btn{ margin-left:.5rem; }
+
+/* Buttons */
+.btn{
+  background:var(--accent); color:#0b0e14; border:none;
+  padding:.55rem .9rem; border-radius:.6rem; font-weight:700; cursor:pointer;
+  transition:transform .05s ease, background .2s ease;
+}
+.btn:hover{ background:var(--accent-2); }
+.btn:active{ transform:translateY(1px); }
+.btn-outline{
+  background:transparent; color:var(--accent); border:2px solid var(--accent);
+}
+.btn-outline:hover{ background:var(--accent); color:#0b0e14; }
+
+/* Game wrapper occupies entire viewport minus header/footer */
+.game-wrapper{
+  flex:1;
+  position:relative;
+  padding:8px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:0; /* important for flex children to size properly */
+}
+
+/* Game layout: board + sidebar */
+.game{
+  width:100%;
+  height:100%;
+  max-width: 1200px;
+  max-height: 100%;
+  display:flex;
+  gap: var(--gap);
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+  background: linear-gradient(180deg,var(--card), #0e1117);
+  border:1px solid #202534; border-radius:14px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.03);
+  overflow:hidden;
+}
+
+/* Board canvas flexes to available space; JS sets exact pixel size */
+#board {
+  display: block;
+  background: #000; /* replaced at runtime with board background image */
+  border-radius: 10px;
+  border: 1px solid #1d2230;
+
+  /* --- aspect-ratio fix --- */
+  flex: 0 0 auto;       /* don’t stretch to fill */
+  max-width: 100%;      /* shrink responsively */
+  height: auto;         /* keep 1:2 ratio (10 cols × 20 rows) */
+}
+
+
+/* Sidebar has clamped width and scrolls internally if needed */
+.sidebar{
+  flex: 0 0 clamp(var(--sidebar-min), 28vw, var(--sidebar-max));
+  display:flex; flex-direction:column; gap:12px;
+  max-height:100%;
+  overflow:auto;
+}
+.panel{
+  background:#0f131a; border:1px solid #1d2230; border-radius:12px;
+  padding:0.9rem;
+}
+.panel h2{ font-size:0.95rem; color:#b9c7d6; margin-bottom:.35rem; }
+.panel div{ font-size:1.25rem; font-weight:800; letter-spacing:.02em; }
+
+.controls ul{ list-style:none; color:var(--muted); }
+.controls li + li{ margin-top:.25rem; }
+
+#next{
+  width:100%; height:auto; background:#0b0f14;
+  border-radius:10px; border:1px solid #1d2230;
+}
+
+/* Overlay */
+.overlay{
+  position:absolute; inset:12px;
+  display:flex; align-items:center; justify-content:center;
+  background: rgba(6,10,18,.55); backdrop-filter: blur(2px);
+  border-radius:12px; border:1px solid #223048;
+}
+.overlay.hidden{ display:none; }
+.overlay-content{
+  background:#0f131a; border:1px solid #243048; border-radius:14px;
+  padding:1.2rem 1.6rem; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,.45);
+}
+#overlay-title{ color:#ffd166; margin-bottom:.3rem; }
+#overlay-sub{ color:#aab4bf; }
+
+/* Footer */
+.footer{
+  flex-shrink:0;
+  opacity:.75; text-align:center; padding:.6rem .8rem;
+  border-top:1px solid #1b2030; font-size:.85rem;
+}
+
+/* Small screens: sidebar drops below board */
+@media (max-width: 860px){
+  .game{ flex-direction:column; }
+  .sidebar{ width:100%; flex: 0 0 auto; }
+}

@@ -1,0 +1,55 @@
+MALORIE NICKLE
+Utah Resident· 801-845-6166
+Malorienickle@gmail.com  
+PROFESSIONAL SUMMARY
+Web developer and software engineering student with hands-on experience building and deploying mobile and web applications. Skilled in HTML, CSS, JavaScript, Python, and Flutter/Dart, with additional exposure to SQL. Strong foundation in problem-solving, user experience design, and cross-functional collaboration from 5+ years in technical support, compliance, and team leadership. Passionate about creating intuitive, user-focused digital tools and continuously learning new technologies.
+TECHNICAL SKILLS AND TOOLS
+•	Languages & Frameworks: HTML, CSS, JavaScript, Flutter/Dart, Python (beginner), SQL
+Tools & Platforms: Git/GitHub, VS Code, Firebase, Looker, Salesforce, Zendesk, Google Workspace, MS Office/Excel
+•	Core Competencies: Responsive web design, UI/UX principles, troubleshooting, data analysis, project coordination, Agile/remote collaboration
+
+
+
+PROJECTS
+•	Website projects – HTML5, CSS3, JavaScript
+•	Designed and built functional and responsive multi-page websites for small businesses
+•	Flower Power Family Farm, Silver Springs Pool Care, Zenpath.
+•	Portfolio Website – HTML, CSS
+•	Designed and deployed a responsive personal portfolio site to showcase development projects.
+•	MindKit (Mobile App) – Flutter/Dart, Firebase
+•	Built and published a wellness app featuring journaling, affirmations, and DBT tools.
+•	Implemented local storage, Firebase sync, and ad-based monetization.
+•	Momentum Planner (Mobile App) – Flutter/Dart, Firebase
+•	Developed a class planning app for competency-based students with course tracking and progress sync.
+•	Designed intuitive UI for adding and organizing tasks and milestones.
+•	Game Prototypes (Personal Projects) – Godot, Ren’Py
+•	Created interactive visual novels and 2D game mechanics.
+•	Learned scripting basics, branching dialogue, and sprite management.
+ 
+PROFESSIONAL EXPERIENCE
+Team Supervisor | Clearlink (Remote) | 2022 – Present
+•	Led a remote support team, mentoring staff on problem-solving and communication in high-volume technical environments.
+•	Used data tools (Looker, SQL, Salesforce) to identify trends, streamline workflows, and improve efficiency.
+•	Enhanced onboarding and training through process documentation and coaching.
+Compliance Analyst | Clearlink | 2021
+•	Audited interactions for accuracy and compliance, ensuring adherence to quality standards.
+•	Collaborated with cross-functional stakeholders to document process improvements.
+Sales Associate | Clearlink | 2020
+•	Ranked in the top 10% for revenue and customer satisfaction by effectively translating customer needs into solutions.
+•	Provided peer mentorship and onboarding support for new hires.
+
+
+
+
+
+//done
+EDUCATION
+BACHELORS OF SCIENCE IN PSYCHOLOGY,
+
+Western Governors University
+Relevant coursework: Applied Statistics, Social Psychology, Learning Theories, Cognitive Science, Ethics, and Cultural Awareness
+
+BACHELORS OF SCIENCE IN SOFTWARE ENGINEERING, IN PROGRESS
+
+Western Governors University
+
